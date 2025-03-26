@@ -5,7 +5,7 @@ This repository contains the code for a web page built as part of an assignment 
 
 ## 🚀 Live Demo
 
-[View the Live Demo](https://assignment-proveway.netlify.app/)
+[View the Live Demo](https://task-proveway.netlify.app/)
 
 ## 📋 Project Overview
 
@@ -24,7 +24,7 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/faizannafees/proveway-assignment.git
+   git clone https://github.com/faizannafees/proveway-task.git
    ```
 2. Open the `index.html` file in your browser.
 
@@ -36,4 +36,4 @@ To run the project locally, follow these steps:
 
 ## 🔧 How to Use
 
-- Open the [live link](https://assignment-proveway.netlify.app/) to view the page online, or follow the installation steps above to view it locally.
+- Open the [live link](https://task-proveway.netlify.app/) to view the page online, or follow the installation steps above to view it locally.
