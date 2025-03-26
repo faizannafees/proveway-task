@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 120%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-container {
+  max-width: 341px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.app-page{
+  width: 100%;
+}
+.header {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.heading {
+  color: #FF6B82;
+  text-align: center;
+}
+.heading h1{
+  font-weight: 600;
+  font-size: 20px;
+  width: 143px;
+  line-height: 24.2px;
+}
+.header fieldset {
+  border-top: 0.9px solid #C8C8C8;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+.container-pair {
+  border: 0.9px solid #C8C8C8;
+  margin: 20px 0 0 0;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.sub-pair {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+ .quantity-checkbox{
+  display: flex;
+ }
+.unit {
+  margin: 0 0 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.discount {
+  background-color: #FF6B82;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  padding: 2px 6px;
+  border-radius: 1px;
+  margin-left: 0.5rem;
+}
+.std-price{
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0.5rem 0 0 0.75rem;
+}
+.discounted-price{
+  font-weight: 500;
+  font-size: 14.46px;
+}
+.old-price s{
+  color: rgb(0 0 0 / 30%);
+  font-weight: 400;
+  font-size: 10px;
+  padding: 0 1.4rem 0 0;
+}
+.unit-price{
+  display: flex;
+  justify-content: space-between;
+}
+.unit-discount{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 0 0.75rem;
+}
+.price-details{
+  display: flex;
+  justify-content: space-between;
+}
+.pairs {
+  display: flex;
+  align-items: center;
+}
+.accordion{
+  margin: 0 0 0 20px;
+}
+
+.container-pair:not(.active) .accordion {
+  display: none;
+}
+
+/* Ribbon */
+.box {
+  position: relative;
+}
+
+/* common */
+.ribbon {
+  width: 119px;
+  height: 26px;
+  position: absolute;
+  border-radius: 0 0 4px 4px;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 5px solid #d7445b;
+}
+.ribbon span {
+  position: absolute;
+  display: flex;
+  width: 119px;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  background-color: #FF6B82;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  border-radius: 0 0 4px 4px;
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: -28px;
+}
+.ribbon-top-right::after {
+  top: 0;
+  right: 9px;
+}
+.ribbon-top-right span {
+  left: -19px;
+  top: 0;
+}
+table{
+  margin-top: 0.8rem;
+  border-spacing: 3px;
+}
+th{
+  font-weight: 400;
+  font-size: 9.94px;
+  text-align: left;
+  padding: 0.10rem;
+}
+td{
+  font-weight: 400;
+  font-size: 9.04px;
+  padding: 0.10rem;
+}
+table td:nth-child(2){
+  width: 65.98px;
+}
+select{
+  width: 72.3px;
+  font-weight: 400;
+  font-size: 10.85px;
+  border: 0.9px solid #D9D9D9;
+  border-radius: 1.81px;
+  background-color: #fff;
+  padding: 0.2rem 0.5rem 0.2rem 0.10rem;
+  box-shadow: 1px #d3d3d3;
+}
+.cart-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.cart-details :first-child {
+  color: #FF6B82;
+  font-weight: 500;
+  font-size: 14px;
+}
+.cart-details .total-cost{
+  font-weight: 400;
+  color: #000;
+  font-size: 14px;
+}
+.cart-details .total-cost .total-price{
+  font-weight: 400;
+  color: #000;
+}
+.cart-btn .plus-sign{
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 16px;
+}
+.cart-btn button {
+  background-color: #FF6B82;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  width: 100%;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.2rem;
+}
+.footer div{
+  font-style: italic;
+  font-size: 12px;
+  font-weight:400;
+  line-height: 14.52px;
+  color: rgba(0, 0, 0, 0.4);
+}
